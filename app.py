@@ -199,5 +199,5 @@ def main():
                 st.markdown(f"*URL:* {policy_url}")
                 st.text_area("Relevant sections:", context, height=200)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
