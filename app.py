@@ -156,14 +156,14 @@ def get_policy_embeddings(policy_text):
 
 # Streamlit Interface
 def main():
-    st.title('UDST Policy Chatbot')
-    st.markdown('Ask me any question regarding the UDST policies!')
+    st.title('Chatbot for UDST Policies')
+    st.markdown('Hello there! Ask me any question about the policies in the University of Doha for Science and Technology')
     
     # Input box for query
     query = st.text_input("Enter your question:")
     
     if query:
-        with st.spinner('Processing your question...'):
+        with st.spinner('Processing prompt...'):
             # Step 1: Classify the intent to determine which policy is relevant
             policy_name = classify_intent(query)
             
